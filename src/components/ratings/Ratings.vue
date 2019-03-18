@@ -265,7 +265,7 @@
     },
     created() {
 
-      axios.get(`${config.url}`/ratings).then((res) => {
+      axios.get(`${config.url}/ratings`).then((res) => {
         if (res.data.errno === ERR_OK) {
           this.ratings = res.data.ratings;
           this.$nextTick(() => {
